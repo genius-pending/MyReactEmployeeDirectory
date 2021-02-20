@@ -1,11 +1,13 @@
 import React from "react";
+import EmployeesContainer from "./components/container";
 import Header from "./components/header";
 
 
 function App() {
   return (
     <div>
-    <Header/>      
+    <Header/>  
+    <EmployeesContainer/>    
     </div>
   );
 }
