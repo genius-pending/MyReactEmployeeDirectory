@@ -21,9 +21,12 @@ const EmployeeTable = (props) => {
           <th scope="col">
             <span onClick={() => props.sortBy("dob", "date")}>DOB</span>
           </th>
-          <th scope="col">
-            <span onClick={() => props.sortBy("nat")}>Nationality</span>
+         <th scope="col">
+            <span onClick={() => props.sortBy("dob","date","age")}>Age</span>
           </th>
+          <th scope="col">
+          <span onClick={() => props.sortBy("nat")}>Nationality</span>
+        </th>
         </tr>
       </thead>
       <tbody>
@@ -46,9 +49,13 @@ const EmployeeTable = (props) => {
                 <a href={`mailto:${employee.email}`}>{employee.email}</a>
               </td>
               <td className="align-middle">{dob}</td>
+              <td className="align-middle age">
+              <a href={`mailto:${employee.dob.age}`}>{employee.dob.age}</a>
+            </td>
               <td className="align-middle nationality">
               <a href={`mailto:${employee.nat}`}>{employee.nat}</a>
             </td>
+            
             </tr>
           );
         })}
