@@ -15,7 +15,7 @@
 ## Description
 The goal for this application was to create a front end react employee directory application that took in the randomuser API. The technologies used to create this application were React,CSS,HTML and javascript.
 ## Deployed Application
-Please click on the following link to access the deployed application .
+Please click on the following link to access the deployed application https://genius-pending.github.io/MyReactEmployeeDirectory/  .
 ## Installation
 Download the repo then open in VS code run npm install to download all the dependancies and then run nodemon using the command npm start. Then open your broswer and go to localhost:3000 in the search bar at the top of the browser . 
 ## Usage
